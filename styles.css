@@ -1,0 +1,165 @@
+body {
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f44336 0%, #2196F3 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  .container {
+    max-width: 420px;
+    width: 95vw;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.97);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(33,150,243,0.10);
+    padding: 36px 20px 20px 20px;
+  }
+  
+  header {
+    margin-bottom: 10px;
+  }
+  
+  .logo-emoji {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 2px 4px #2196f3aa);
+    vertical-align: middle;
+  }
+  
+  header h1 {
+    margin: 0 0 0.2em 0;
+    font-size: 2.7rem;
+    color: #f44336;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .description {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.2s, background 0.2s;
+    font-family: inherit;
+    background: #fafaff;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #2196F3;
+    outline: none;
+    background: #e3f2fd;
+  }
+  
+  button {
+    padding: 2px 20px;
+    font-size: 1rem;
+    margin: 4px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f44336 60%, #2196F3 100%);
+    color: #fff;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(244,67,54,0.08);
+  }
+  
+  button:hover, button:focus {
+    background: linear-gradient(90deg, #2196F3 60%, #f44336 100%);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.12);
+    transform: translateY(-2px) scale(1.03);
+  }
+  
+  .wheel-container {
+    margin: 30px 0;
+    position: relative;
+    height: 220px;
+  }
+  
+  .wheel {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px solid #444;
+    background: conic-gradient(#f44336 0% 50%, #2196F3 50% 100%);
+    transition: transform 4s cubic-bezier(.17,.67,.83,.67);
+    box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+    position: relative;
+  }
+  
+  .wheel-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 28px solid #444;
+    z-index: 2;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #playerTurn {
+    color: #2196F3;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  }
+  
+  #promptText {
+    font-size: 1.2rem;
+    margin-top: 18px;
+    color: #333;
+    min-height: 48px;
+  }
+  
+  footer {
+    margin-top: 32px;
+    color: #888;
+    font-size: 0.98rem;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    letter-spacing: 0.5px;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Truth or Dare</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <span class="logo-emoji" aria-hidden="true">🎉</span>
+      <h1>Truth or Dare</h1>
+    </header>
+
+    <p class="description">A fun, modern party game! Enter player names, spin the wheel, and answer a truth or dare.</p>
+
+    <main>
+      <section id="playerSetup" aria-label="Player Setup">
+        <label for="player1">Player 1 Name</label>
+        <input type="text" id="player1" placeholder="Enter Player 1 name" aria-required="true" autocomplete="off" />
+        <label for="player2">Player 2 Name</label>
+        <input type="text" id="player2" placeholder="Enter Player 2 name" aria-required="true" autocomplete="off" />
+        <button id="startBtn">Start Game</button>
+      </section>
+
+      <section id="gameArea" class="hide" aria-live="polite">
+        <h2 id="playerTurn"></h2>
+        <div class="wheel-container">
+          <div id="wheel" class="wheel" aria-label="Spin Wheel"></div>
+          <button id="spinBtn">Spin</button>
+        </div>
+        <div id="promptArea" class="hide">
+          <h3 id="promptText"></h3>
+          <button id="nextBtn">Next Turn</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made with ❤️ for party fun. Please play responsibly!</small>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
