@@ -36,9 +36,23 @@ const truthPrompts = [
 "What’s one thing about me you could never get tired of?",
 "What’s something I do that makes you feel completely loved?",
 "What's your secret fantasy you've never told anyone?",
+  "If you could have dinner with any celebrity, who would it be?",
+  "What’s the most adventurous thing you’ve ever done?",
+  "If you could live anywhere in the world, where would it be?",
+  "What’s your biggest dream in life?",
+  "What’s one thing you wish you could change about the world?",
+  "What’s your favorite childhood memory?",
+  "If you could have any superpower, what would it be and why?",
+  "What’s the best piece of advice you’ve ever received?",
+  "If you could relive one day of your life, which day would it be and why?"
+
 ];
 
 const darePrompts = [
+  "complete d**k",
+  "Do a silly dance for 30 seconds.",
+  "Speak in an accent for the next 3 rounds.",
+  "Do 20 push-ups.",
   "Do 10 jumping jacks.",
   "Speak in a funny voice for the next round.",
   "Do your best celebrity impression.",
@@ -57,6 +71,15 @@ const darePrompts = [
 "Tell me one thing I do that makes you feel special.",
 "I dare you to say my name in your most seductive voice.",
 "Give me a slow, warm hug… and whisper your favorite thing about holding me",
+  "Speak in a funny voice for the next round.",
+  "Do your best celebrity impression.",
+  "Sing a random song out loud.",
+  "Act like a baby for 30 seconds.",
+  "Whine for 60 seconds.",
+  "Do your best animal impression.",
+  "Dance for 30 seconds.",
+  "Tell a joke.",
+  "Spin around 5 times and try to walk straight."
 
 ];
 
