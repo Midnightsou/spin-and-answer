@@ -1,12 +1,11 @@
 body {
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f44336 0%, #2196F3 100%);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    background: linear-gradient(120deg, #f44336 0%, #ff9800 50%, #2196F3 100%);
+    background-size: 200% 200%;
+    animation: gradientBG 12s ease-in-out infinite;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,95 +18,110 @@ body {
   }
   
   .container {
-    max-width: 420px;
-    width: 95vw;
+    max-width: 430px;
+    width: 96vw;
     margin: 40px auto;
-    background: rgba(255,255,255,0.97);
-    border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(33,150,243,0.10);
-    padding: 36px 20px 20px 20px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 28px;
+    box-shadow: 0 8px 40px 0 rgba(33,150,243,0.18), 0 1.5px 8px 0 rgba(244,67,54,0.10);
+    padding: 42px 24px 28px 24px;
+    backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255,255,255,0.35);
+    position: relative;
   }
   
   header {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   
   .logo-emoji {
-    font-size: 2.2rem;
-    filter: drop-shadow(0 2px 4px #2196f3aa);
+    font-size: 2.7rem;
+    filter: drop-shadow(0 2px 8px #2196f3aa);
     vertical-align: middle;
+    margin-right: 0.2em;
   }
   
   header h1 {
     margin: 0 0 0.2em 0;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     color: #f44336;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     display: inline-block;
     vertical-align: middle;
+    text-shadow: 0 2px 12px #ff980055;
   }
   
   .description {
     color: #444;
-    font-size: 1.1rem;
-    margin-bottom: 28px;
+    font-size: 1.15rem;
+    margin-bottom: 32px;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    background: linear-gradient(90deg, #f44336 20%, #2196F3 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
   }
   
   label {
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
     display: block;
-    margin-top: 12px;
-    margin-bottom: 4px;
+    margin-top: 14px;
+    margin-bottom: 6px;
     text-align: left;
+    letter-spacing: 0.5px;
   }
   
   input {
     width: 100%;
-    max-width: 320px;
-    padding: 12px;
-    margin-bottom: 12px;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: border-color 0.2s, background 0.2s;
+    max-width: 340px;
+    padding: 14px;
+    margin-bottom: 16px;
+    font-size: 1.08rem;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
     font-family: inherit;
-    background: #fafaff;
+    background: rgba(250,250,255,0.95);
     box-sizing: border-box;
+    box-shadow: 0 1.5px 8px 0 rgba(33,150,243,0.06);
   }
   
   input:focus {
     border-color: #2196F3;
     outline: none;
     background: #e3f2fd;
+    box-shadow: 0 2px 12px 0 #2196f355;
   }
   
   button {
-    padding: 2px 20px;
-    font-size: 1rem;
-    margin: 4px 0;
+    padding:  7px;
+    font-size: 1.08rem;
+    margin: 14px 0;
     cursor: pointer;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background: linear-gradient(90deg, #f44336 60%, #2196F3 100%);
     color: #fff;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
-    box-shadow: 0 2px 8px rgba(244,67,54,0.08);
+    box-shadow: 0 2px 12px rgba(244,67,54,0.10);
+    text-shadow: 0 1px 8px #2196f355;
   }
   
   button:hover, button:focus {
     background: linear-gradient(90deg, #2196F3 60%, #f44336 100%);
-    box-shadow: 0 4px 16px rgba(33,150,243,0.12);
-    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(33,150,243,0.18);
+    transform: translateY(-2px) scale(1.04);
   }
   
   .wheel-container {
-    margin: 30px 0;
+    margin: 36px 0 18px 0;
     position: relative;
     height: 220px;
   }
@@ -120,22 +134,24 @@ body {
     border: 10px solid #444;
     background: conic-gradient(#f44336 0% 50%, #2196F3 50% 100%);
     transition: transform 4s cubic-bezier(.17,.67,.83,.67);
-    box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+    box-shadow: 0 8px 32px rgba(33,150,243,0.12);
     position: relative;
+    overflow: hidden;
   }
   
   .wheel-container::before {
     content: '';
     position: absolute;
     left: 50%;
-    top: 0;
+    top: -18px;
     transform: translateX(-50%);
     width: 0; 
     height: 0; 
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 28px solid #444;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 32px solid #222;
     z-index: 2;
+    filter: drop-shadow(0 2px 4px #2196f3aa);
   }
   
   .hide {
@@ -144,22 +160,50 @@ body {
   
   #playerTurn {
     color: #2196F3;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.35rem;
+    margin-bottom: 14px;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 8px #2196f355;
   }
   
   #promptText {
-    font-size: 1.2rem;
-    margin-top: 18px;
+    font-size: 1.22rem;
+    margin-top: 22px;
     color: #333;
     min-height: 48px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 8px #2196f322;
   }
   
   footer {
-    margin-top: 32px;
+    margin-top: 36px;
     color: #888;
-    font-size: 0.98rem;
+    font-size: 1.03rem;
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
     letter-spacing: 0.5px;
+    text-shadow: 0 1px 8px #2196f322;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 18px 4vw 12px 4vw;
+      max-width: 98vw;
+    }
+    .wheel {
+      width: 140px;
+      height: 140px;
+      border-width: 7px;
+    }
+    .wheel-container {
+      height: 160px;
+    }
+    .logo-emoji {
+      font-size: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
   }
